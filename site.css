@@ -1,0 +1,50 @@
+body {
+  margin:0;
+  padding:0;
+  width:100%;
+  font-size:14px;
+  line-height:1.5;
+  font-family: 'Garamond Bold', serif;
+  color: black; 
+  min-height:100vh;
+  overflow:scroll;
+  postion:relative; 
+  background-color:#fcfade;
+}
+.sm-page {
+ width:100%}
+
+.sm-category-container {
+  left-margin:25%;
+  padding:2%;
+  width:20%;
+  font-family: 'arial';
+  margin-top: 10%;
+  position: fixed;
+}
+.sm-header-container {
+  margin:30%;
+  padding:2%;
+  width:30%;
+  margin-top: 10%;
+  position: fixed;
+ 
+}
+
+.sm-subheading-container {
+  position: fixed;
+  margin-top: 0%;
+  margin: 17% 30% 30% 30%;
+  padding:2%;
+}
+
+.sm-footer {
+  margin-bottom:1%;
+	padding: 30px;
+  width: 100%;
+	position: fixed;
+	overflow: hidden;
+  font-family: 'arial';
+  color: red;
+}
+
