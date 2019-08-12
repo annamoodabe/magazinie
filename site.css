@@ -38,13 +38,33 @@ body {
   padding:2%;
 }
 
+/* FOOTER STYLING */
 .sm-footer {
-  margin-bottom:1%;
+  margin-top: 100px;
 	padding: 30px;
   width: 100%;
-	position: fixed;
+	background-color: red;
+	position: relative;
 	overflow: hidden;
-  font-family: 'arial';
+}
+
+.sm-button {
+  margin-left: 20px;
+	float: left;
+}
+
+.sm-button a {
+  text-align: center;
+  padding: 10px 30px;
+  border: 1px solid white;
+  border-radius: 30px;
+  color: white;
+}
+
+.sm-button a:hover {
   color: red;
+	background-color: white;
+  border: 1px solid red;
+  text-decoration: none;
 }
 
