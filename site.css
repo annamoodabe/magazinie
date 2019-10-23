@@ -1,70 +1,159 @@
 body {
-  margin:0;
-  padding:0;
-  width:100%;
-  font-size:14px;
-  line-height:1.5;
-  font-family: 'Garamond Bold', serif;
-  color: black; 
-  min-height:100vh;
-  overflow:scroll;
-  postion:relative; 
-  background-color:#fcfade;
+/* height: 2000px; */
 }
+
+.mouseimg{
+  background-image: url('./assets/micecheese1.jpg');
+  width: 100%;
+  height: 100%;
+  background-size: 10%;
+  background-repeat:no-repeat;
+  background-position: center center;
+}
+
+.sm-position--on{
+  background-size: 90%;
+}
+
+.amp{
+  display: inline-block;
+  height: 75px;
+  width: 75px;
+  background-image: url('./assets/dancingguy1.png');
+  background-size: 100%;
+  background-position: 50% 15%;
+}
+
+
+.sm-move--on{
+  animation-name: bounceIn;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bounceIn{
+  0%{
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  50%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  70%{
+    opacity: 1;
+    transform: translateX(-20px);
+  }
+  80%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  90%{
+    opacity: 1;
+    transform: translateX(-8px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+
+
+
+
+.sm-colour--on{
+  background-color: #f7e8b1;
+
+}
+
+
 .sm-page {
  width:100%}
 
-.sm-category-container {
-  left-margin:25%;
-  padding:2%;
-  width:20%;
-  font-family: 'arial';
-  margin-top: 10%;
-  position: fixed;
+ .sm-head{
+   position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 2% 0;
+ }
+
+.sm-heading {
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: 'Bree Serif', serif;
 }
-.sm-header-container {
-  margin:30%;
-  padding:2%;
-  width:30%;
-  margin-top: 10%;
-  position: fixed;
- 
+.sm-credit-container {
+  font-family: 'Bitter', serif;
+  font-weight: bold;
+  margin: 0 2%;
+  padding: 0 2%;
 }
 
-.sm-subheading-container {
-  position: fixed;
-  margin-top: 0%;
-  margin: 17% 30% 30% 30%;
-  padding:2%;
+.sm-subcredit-container {
+  font-family: 'Bitter', serif;
+  letter-spacing: -1px;
+  color: grey;
+  margin:  0 2%;
+  padding:  0 2%;
 }
+
+
+.sm-article-title {
+  /* position: fixed; */
+
+  margin:2%;
+  padding:2%;
+  width:100%;
+  letter-spacing: 5px;
+  font-weight:bolder;
+  font-stretch: expanded;
+  font-size: 4em;
+  font-family: 'Ultra', serif;
+}
+
+.sm-article-title:hover {
+  margin:2%;
+  padding:2%;
+  width:100%;
+  letter-spacing: 5px;
+  font-weight:bolder;
+  font-stretch: expanded;
+  color: #1d2d76;
+  font-size: 4em;
+  font-family: 'Ultra', serif;
+}
+
 
 /* FOOTER STYLING */
 .sm-footer {
-  margin-top: 100px;
-	padding: 30px;
+  position:fixed;
+  bottom: 0;
+	padding: 30px 0;
   width: 100%;
-	background-color: red;
-	position: relative;
 	overflow: hidden;
 }
 
 .sm-button {
   margin-left: 20px;
 	float: left;
+  font-family: 'Bitter', serif;
+
 }
 
 .sm-button a {
   text-align: center;
-  padding: 10px 30px;
-  border: 1px solid white;
+  padding: 10px 20px;
   border-radius: 30px;
   color: white;
-}
-
-.sm-button a:hover {
-  color: red;
-	background-color: white;
-  border: 1px solid red;
+  font-family: 'Bitter', serif;
+  color: grey;
   text-decoration: none;
 }
 
+.sm-button a:hover {
+  text-decoration: none;
+  font-style: italic;
+
+}
